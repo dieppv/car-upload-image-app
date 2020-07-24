@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DriveVC" customModule="Smartphone_Drive_App" customModuleProvider="target">
+            <connections>
+                <outlet property="btnAccel" destination="l7F-KN-Amq" id="TIQ-D0-b4a"/>
+                <outlet property="btnBrake" destination="FvC-3G-gSx" id="YhL-qT-chv"/>
+                <outlet property="imvPhoneTopConstraint" destination="eg7-4c-WuG" id="QoX-jD-Sqf"/>
+                <outlet property="imvRoad" destination="jrh-u3-FVN" id="sCg-Eh-B5j"/>
+                <outlet property="imvSmartPhone" destination="m4p-Uu-nXh" id="0Ra-wG-BvC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="vwAction" destination="f2c-IJ-kma" id="DQN-Co-r9E"/>
+                <outlet property="vwContent" destination="qMF-Wf-fgh" id="Mvk-TZ-pSk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qMF-Wf-fgh">
+                    <rect key="frame" x="44" y="0.0" width="808" height="414"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_road2" translatesAutoresizingMaskIntoConstraints="NO" id="jrh-u3-FVN">
+                            <rect key="frame" x="0.0" y="0.0" width="808" height="414"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="jrh-u3-FVN" secondAttribute="bottom" id="0BW-gg-nqT"/>
+                        <constraint firstItem="jrh-u3-FVN" firstAttribute="leading" secondItem="qMF-Wf-fgh" secondAttribute="leading" id="c2l-9e-gcF"/>
+                        <constraint firstAttribute="trailing" secondItem="jrh-u3-FVN" secondAttribute="trailing" id="dvt-Tr-IIV"/>
+                        <constraint firstItem="jrh-u3-FVN" firstAttribute="top" secondItem="qMF-Wf-fgh" secondAttribute="top" id="mCN-OI-vjd"/>
+                    </constraints>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smart_phone1" translatesAutoresizingMaskIntoConstraints="NO" id="m4p-Uu-nXh">
+                    <rect key="frame" x="44" y="273.99999999999994" width="808" height="538.66666666666652"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="m4p-Uu-nXh" secondAttribute="height" multiplier="1.5:1" id="DoV-bx-Xy9"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2c-IJ-kma">
+                    <rect key="frame" x="698" y="308" width="130" height="90"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="1mw-e3-XPm">
+                            <rect key="frame" x="0.0" y="0.0" width="130" height="90"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvC-3G-gSx">
+                                    <rect key="frame" x="0.0" y="0.0" width="50" height="90"/>
+                                    <state key="normal" image="brake_img"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7F-KN-Amq">
+                                    <rect key="frame" x="80" y="0.0" width="50" height="90"/>
+                                    <state key="normal" image="accel_img"/>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="2IO-w4-Q29"/>
+                        <constraint firstAttribute="bottom" secondItem="1mw-e3-XPm" secondAttribute="bottom" id="3V5-gZ-Z26"/>
+                        <constraint firstItem="1mw-e3-XPm" firstAttribute="top" secondItem="f2c-IJ-kma" secondAttribute="top" id="JwJ-ie-0WK"/>
+                        <constraint firstAttribute="trailing" secondItem="1mw-e3-XPm" secondAttribute="trailing" id="KxG-1b-uCS"/>
+                        <constraint firstAttribute="width" constant="130" id="RT8-V6-lvx"/>
+                        <constraint firstItem="1mw-e3-XPm" firstAttribute="leading" secondItem="f2c-IJ-kma" secondAttribute="leading" id="vAH-Ma-WdP"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="f2c-IJ-kma" firstAttribute="bottom" secondItem="qMF-Wf-fgh" secondAttribute="bottom" constant="-16" id="UP8-eH-pV1"/>
+                <constraint firstItem="m4p-Uu-nXh" firstAttribute="leading" secondItem="qMF-Wf-fgh" secondAttribute="leading" id="X56-co-UUn"/>
+                <constraint firstItem="f2c-IJ-kma" firstAttribute="trailing" secondItem="qMF-Wf-fgh" secondAttribute="trailing" constant="-24" id="YS9-tI-QCp"/>
+                <constraint firstItem="qMF-Wf-fgh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cyl-GX-bG3"/>
+                <constraint firstItem="m4p-Uu-nXh" firstAttribute="top" secondItem="qMF-Wf-fgh" secondAttribute="bottom" constant="-140" id="eg7-4c-WuG"/>
+                <constraint firstAttribute="bottom" secondItem="qMF-Wf-fgh" secondAttribute="bottom" id="gXr-n3-E5j"/>
+                <constraint firstItem="m4p-Uu-nXh" firstAttribute="trailing" secondItem="qMF-Wf-fgh" secondAttribute="trailing" id="nYs-aQ-E4y"/>
+                <constraint firstItem="qMF-Wf-fgh" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r6i-go-jbd"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="qMF-Wf-fgh" secondAttribute="trailing" id="xxF-DU-FV7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="132.58928571428572" y="133.33333333333334"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="accel_img" width="132" height="223"/>
+        <image name="back_road2" width="1024" height="549"/>
+        <image name="brake_img" width="132" height="223"/>
+        <image name="smart_phone1" width="1125" height="1125"/>
+    </resources>
+</document>
