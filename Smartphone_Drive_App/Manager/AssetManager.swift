@@ -2,7 +2,7 @@
 //  AssetManager.swift
 //  Smartphone_Drive_App
 //
-//  Created by Creato Mac mini 5 on 7/15/20.
+//  Created by Ominext Mac mini 5 on 7/15/20.
 //
 
 import UIKit
@@ -80,7 +80,7 @@ class AssetManager {
     }
     
     static func getRandomSmartphone() -> UIImage? {
-        let randomInt = Int.random(in: 1..<8)
+        let randomInt = Int.random(in: 5..<8)
         return getImage(Asset(rawValue: "smart_phone\(randomInt)") ?? .smartphone1)
     }
     

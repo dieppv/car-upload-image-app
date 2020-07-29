@@ -2,7 +2,7 @@
 //  FirstDriveVC.swift
 //  Smartphone_Drive_App
 //
-//  Created by Creato Mac mini 5 on 7/15/20.
+//  Created by Ominext Mac mini 5 on 7/15/20.
 //
 
 import UIKit
@@ -57,13 +57,21 @@ class DriveVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupUI()
+        getAsset()
+    }
+    
+    func showSmartphone() {
         if UIDevice.current.model == "iPad" {
             imvPhoneTopConstraint.constant = -250
         } else {
             imvPhoneTopConstraint.constant = -155
         }
-        setupUI()
-        getAsset()
+        UIView.animate(withDuration: 1.5, delay: 1, options: .curveEaseIn, animations: {
+            self.view.layoutIfNeeded()
+        }) { (_) in
+            //
+        }
     }
     
     private func getAsset() {
@@ -158,9 +166,15 @@ class DriveVC: UIViewController {
     
     //MARK: - accel
     @objc func accelBegin(sender: UIButton) {
+        
+        if driveType == .smartphone && !smartphoneRunning {
+            showSmartphone()
+        }
+        
         if driveType == .smartphone && smartphoneRunning {
             return
         }
+        
         smartphoneRunning = true
         runAccelTimer()
         //run tree
@@ -187,9 +201,11 @@ class DriveVC: UIViewController {
         if count >= 5 {
             
             addCar()
+            if accelTimer != nil {
+                accelTimer.invalidate()
+                accelTimer = nil
+            }
             
-            accelTimer.invalidate()
-            accelTimer = nil
             print("vihicle run")
             //run vehicle
             //log begin time
@@ -277,6 +293,7 @@ class DriveVC: UIViewController {
 //MARK: - Add Image
 extension DriveVC {
     @objc func leftTree() {
+
         let tree = AssetManager.getImage(.tree)
         let imvTree = UIImageView(image: tree)
         imvTree.contentMode = .scaleToFill

@@ -2,7 +2,7 @@
 //  FirstDriveVC.swift
 //  Smartphone_Drive_App
 //
-//  Created by Creato Mac mini 5 on 7/15/20.
+//  Created by Ominext Mac mini 5 on 7/15/20.
 //  Copyright © 2020 Hai Nguyen Personal. All rights reserved.
 //
 

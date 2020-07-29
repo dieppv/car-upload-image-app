@@ -2,7 +2,7 @@
 //  DriveManager.swift
 //  Smartphone_Drive_App
 //
-//  Created by Creato Mac mini 5 on 7/21/20.
+//  Created by Ominext Mac mini 5 on 7/21/20.
 //
 
 import Foundation

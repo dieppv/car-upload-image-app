@@ -51,7 +51,7 @@
 		D1BE6C9724CAD45E005D2BB6 /* drive.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = drive.mp3; sourceTree = "<group>"; };
 		D1BE6C9824CAD45E005D2BB6 /* hit.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hit.mp3; sourceTree = "<group>"; };
 		D1BE6C9E24CAD4CE005D2BB6 /* SoundManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundManager.swift; sourceTree = "<group>"; };
-		D1C4687324BEE51000AD4364 /* Smartphone_Drive_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smartphone_Drive_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C4687324BEE51000AD4364 /* スマホドライブ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "スマホドライブ.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C4687624BEE51000AD4364 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1C4687A24BEE51000AD4364 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D1C4687D24BEE51000AD4364 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 		D1C4687424BEE51000AD4364 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1C4687324BEE51000AD4364 /* Smartphone_Drive_App.app */,
+				D1C4687324BEE51000AD4364 /* スマホドライブ.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -201,7 +201,7 @@
 			);
 			name = Smartphone_Drive_App;
 			productName = Smartphone_Drive_App;
-			productReference = D1C4687324BEE51000AD4364 /* Smartphone_Drive_App.app */;
+			productReference = D1C4687324BEE51000AD4364 /* スマホドライブ.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -433,7 +433,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hai.nguyen.Smartphone-Drive-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "スマホドライブ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,7 +452,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "hai.nguyen.Smartphone-Drive-App";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "スマホドライブ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
